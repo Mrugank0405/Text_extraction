@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Verification</title>
+</head>
+
+<body>
+    <h1>ID Card Verification</h1>
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="reg_no">Registration Number:</label>
+        <input type="text" id="reg_no" name="reg_no" required>
+        <br><br>
+        <label for="id_card">Upload ID Card:</label>
+        <input type="file" id="id_card" name="id_card" accept="image/*" required>
+        <br><br>
+        <button type="submit">Verify</button>
+    </form>
+</body>
+
+</html>
